@@ -1,0 +1,25 @@
+/*
+*
+* @author Washington Júnior
+* @version 0.1
+*/
+
+/* =============================== layout ========================== */
+
+/* ********** BARRA DE NAVEGAÇÃO ********** */
+
+.img-logo {
+	height: 50px;
+	width: 50px;
+	display: block;
+	background: url('../img/rfuteam-logo.png') no-repeat;
+	background-size: contain; /* definir que a imagem de fundo terá o mesmo tamanho da classe */
+	color: transparent; /* No caso de leitores de tela, eles reconhecem textos, por isso é importante manter o texto e a imagem */
+}
+
+body {
+  padding-top: 76px;
+}
+
+/* **********  ********** */
+
