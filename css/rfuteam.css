@@ -6,7 +6,27 @@
 
 /* =============================== layout ========================== */
 
-/* ********** BARRA DE NAVEGAÇÃO ********** */
+/* ********** PALETA DE CORES **********
+
+- Preto: #212121;
+- Vermelho: #cb202d;
+- Branco Navbar (.bg-light): #f8f9fa!important
+- Branco: #ffffff;
+
+*/
+
+/* ********** NAVIGATION BAR ********** */
+
+body {
+  padding-top: 126px; /* height do navbar: 106px; */
+  /* background: #212121;
+  color: #ffffff; */
+
+}
+
+nav {
+	border-bottom: 30px solid #cb202d;
+}
 
 .img-logo {
 	height: 50px;
@@ -17,9 +37,38 @@
 	color: transparent; /* No caso de leitores de tela, eles reconhecem textos, por isso é importante manter o texto e a imagem */
 }
 
-body {
-  padding-top: 76px;
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.7);
 }
 
-/* **********  ********** */
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: rgba(0,0,0,1);
+    font-weight: bold;
+}
 
+/* ********** INFORMATION SECTION ********** */
+
+
+/* ********** INSTRUCTORS SECTION ********** */
+
+.star-primary {
+    margin: 25px auto 30px;
+    max-width: 250px;
+    border-top: solid 5px;
+    border-color: #23202B; /* preto: #23202B; */
+}
+
+.img-profile {
+	height: 360px;
+	width: 360px;
+}
+
+/* ********** SECTION HORÁRIOS/LOCAIS ********** */
+
+/* ********** TIPOGRAFIA ********** */
+
+h2 {
+	font-size: 3em;
+	font-weight: bold;
+	color: #cb202d;
+}
