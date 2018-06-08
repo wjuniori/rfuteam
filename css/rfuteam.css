@@ -8,29 +8,23 @@
 
 /* ********** PALETA DE CORES **********
 
-- Preto: #212121;
+- Preto: #212121 (body - background);
+- Preto: #23202B (.star-primary);
 - Vermelho: #cb202d;
-- Branco Navbar (.bg-light): #f8f9fa!important
+- Branco: #f8f9fa!important (.bg-light);
 - Branco: #ffffff;
 
 */
 
 /* ********** NAVIGATION BAR ********** */
 
-body {
-  padding-top: 126px; /* height do navbar: 106px; */
-  /* background: #212121;
-  color: #ffffff; */
-
-}
-
 nav {
 	border-bottom: 30px solid #cb202d;
 }
 
-.img-logo {
+.img-brand {
+    width: 50px;
 	height: 50px;
-	width: 50px;
 	display: block;
 	background: url('../img/rfuteam-logo.png') no-repeat;
 	background-size: contain; /* definir que a imagem de fundo terá o mesmo tamanho da classe */
@@ -46,29 +40,75 @@ nav {
     font-weight: bold;
 }
 
+body {
+  padding-top: 124px; /* height do navbar: 104px; */
+  /* background: #212121;
+  color: #ffffff; */
+
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 126px; /* height do navbar: 106px; */
+  }
+}
+
 /* ********** INFORMATION SECTION ********** */
 
 
 /* ********** INSTRUCTORS SECTION ********** */
 
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #cb202d;
+}
+
 .star-primary {
     margin: 25px auto 30px;
     max-width: 250px;
     border-top: solid 5px;
-    border-color: #23202B; /* preto: #23202B; */
+    border-color: #23202B;
 }
 
 .img-profile {
-	height: 360px;
-	width: 360px;
+    width: 360px;
+    height: 360px;
 }
 
-/* ********** SECTION HORÁRIOS/LOCAIS ********** */
+ul.list-social {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+ul.list-social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #23202B;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+ul.list-social li a:hover,
+ul.list-social li a:active {
+    background-color: #cb202d;
+}
+
+/* ********** LOCATION SECTION ********** */
+
+.location-item {
+    margin-bottom: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
 
 /* ********** TIPOGRAFIA ********** */
-
-h2 {
-	font-size: 3em;
-	font-weight: bold;
-	color: #cb202d;
-}

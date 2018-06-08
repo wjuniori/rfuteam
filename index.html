@@ -7,8 +7,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
     <!-- Rfuteam CSS -->
     <link rel="stylesheet" type="text/css" href="css/rfuteam.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
     <!-- Favicon -->
     <link rel="icon" href="img/rfuteam-favicon.png">
@@ -24,7 +28,7 @@
 
         <!-- logo -->
         <a class="navbar-brand" href="#page-top">
-          <span class="img-logo">Rfuteam</span>
+          <span class="img-brand">Rfuteam</span>
         </a>
 
         <!-- botao toggle -->
@@ -39,7 +43,7 @@
               <a class="nav-link" href="#instructors">Instrutores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Horários/Locais</a>
+              <a class="nav-link" href="#location">Horários/Locais</a>
             </li>
           </ul>
         </div>
@@ -101,30 +105,132 @@
     <section id="instructors">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-lg-12 text-center">
             <h2>Instrutores</h2>
             <hr class="star-primary">
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 text-center">
-            <img src="img/ramon-carvalho.jpg" alt="Ramon Carvalho" class="img-fluid img-profile">
+          <div class="col-lg-6 text-center mb-4">
+            <img src="img/ramon-carvalho.jpg" alt="Ramon Carvalho" class="rounded-circle img-fluid d-block mx-auto img-profile">
             <h4>Ramon Carvalho</h4>
-            <h5>Graduando Ed. Física | Apaixonado por esportes</h5>
+            <h5>Graduando Ed. Física</h5>
+            <ul class="list-inline list-social">
+              <li class="list-inline-item">
+                <a target="_blank" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://www.instagram.com/ramonrfut/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=XXYY000000000&text=Olá!"> <!-- encurtador de URL: https://bitly.com/ -->
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_top" href="mailto:#">
+                  <i class="far fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="col-md-6 text-center">
-            <img src="img/rafael-santos.jpg" alt="Rafael Santos" class="img-fluid img-profile">
+          <div class="col-lg-6 text-center mb-4">
+            <img src="img/rafael-santos.jpg" alt="Rafael Santos" class="rounded-circle img-fluid d-block mx-auto img-profile">
             <h4>Rafael Santos</h4>
-            <h5>Graduando Ed. Física | </h5>
+            <h5>Graduando Ed. Física</h5>
+            <ul class="list-inline list-social">
+              <li class="list-inline-item">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100000708830727">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://www.instagram.com/rflsanttos/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_blank" href="https://bit.ly/2sCwcPk">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a target="_top" href="mailto:#">
+                  <i class="far fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div> <!-- container -->
     </section>
 
-    <!-- ********** SECTION HORÁRIOS/LOCAIS ********** -->
+    <!-- ********** LOCATION SECTION ********** -->
 
-    <section>
-      <h2>Horários/Locais</h2>
+    <section id="location">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Horários/Locais</h2>
+            <hr class="star-primary">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 location-item">
+            
+            <div class="card h-100">
+              <img class="card-img-top" src="img/mulheres-futevolei-praia.jpg" alt="Turma da Arena Itapuã">
+              <h5 class="card-header">Arena Itapuã</h5>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Rua do Teatro (Rua J), Praia de Itapuã</h6>
+                <p class="card-text">
+                  <span class="bold">Turma:</span> Mista<br>
+                  <span class="bold">Dias:</span> Segunda e Quarta<br>
+                  <span class="bold">Horários:</span> 5:00 | 7:00<br>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-sm-6 location-item">
+            
+            <div class="card h-100">
+              <img class="card-img-top" src="img/turma-futevolei.jpg" alt="Turma da Arena Abaeté">
+              <h5 class="card-header">Arena Abaeté</h5>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Lagoa do Abaeté, Itapuã</h6>
+                <p class="card-text">
+                  <span class="bold">Turma:</span> Mista<br>
+                  <span class="bold">Dias:</span> Segunda e Quarta<br>
+                  <span class="bold">Horários:</span> 5:00 | 7:00<br>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-sm-6 location-item">
+            
+            <div class="card h-100">
+              <img class="card-img-top" src="img/criancas-futevolei-quadra-areia.jpg" alt="Turma da Arena Praia de Itapuã">
+              <h5 class="card-header">Arena Le Parc</h5>
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Le Parc Residential Resort, Paralela</h6>
+                <p class="card-text">
+                  <span class="bold">Turma:</span> Mista<br>
+                  <span class="bold">Dias:</span> Segunda e Quarta<br>
+                  <span class="bold">Horários:</span> 5:00 | 7:00<br>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- row -->
+      </div> <!-- container -->
     </section>
 
     <!-- Optional JavaScript -->
