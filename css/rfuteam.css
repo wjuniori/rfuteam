@@ -9,7 +9,7 @@
 /* ********** PALETA DE CORES **********
 
 - Preto: #212121 (body - background);
-- Preto: #23202B / rgb(35,32,43) = (.star-primary);
+- Preto: #23202b / rgb(35,32,43) = (.star-primary);
 - Vermelho: #cb202d;
 - Branco: #f8f9fa!important (.bg-light);
 - Branco: #ffffff;
@@ -18,9 +18,9 @@
 
 /* ********** NAVIGATION BAR ********** */
 
-nav {
+/* nav {
 	border-bottom: 30px solid #cb202d;
-}
+} */
 
 .img-brand {
     width: 50px;
@@ -52,7 +52,7 @@ html, body {
 header.masthead {
     position: relative;
     width: 100%;
-    padding-top: 206px; /* height do navbar: 106px; */
+    padding-top: 176px; /* height do navbar: 76px; */
     padding-bottom: 100px;
     color: white;
     background: linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)), url("../img/action-backlit-beach-978695.jpg");
@@ -116,7 +116,7 @@ ul.list-primary li i {
     background: rgba(35,32,43,0.8);
 }
 
-/* ********** INSTRUCTORS SECTION ********** */
+/* ********** CLASSES SECTION ********** */
 
 section {
     padding: 150px 0;
@@ -125,15 +125,25 @@ section {
 h2 {
     font-size: 3em;
     font-weight: bold;
-    color: #cb202d;
+    color: #ffffff;
 }
 
 .star-primary {
     margin: 25px auto 30px;
     max-width: 250px;
     border-top: solid 5px;
-    border-color: #23202B;
+    border-color: #ffffff;
 }
+
+.classes-item {
+    margin-bottom: 30px;
+}
+
+/* ********** PLANS SECTION ********** */
+
+
+
+/* ********** INSTRUCTORS SECTION ********** */
 
 .img-profile {
     width: 300px;
@@ -161,7 +171,7 @@ ul.list-transition li i {
 
 ul.list-transition li i:hover,
 ul.list-transition li i:active {
-    background-color: #23202B;
+    background-color: #23202b;
 }
 
 ul.list-transition li a {
@@ -171,18 +181,8 @@ ul.list-transition li a {
 ul.list-transition li a:hover,
 ul.list-transition li a:active {
     text-decoration: none;
-    color: #23202B;
+    color: #23202b;
 }
-
-/* ********** CLASSES SECTION ********** */
-
-.classes-item {
-    margin-bottom: 30px;
-}
-
-/* ********** PLANS SECTION ********** */
-
-
 
 /* ********** CONTACT SECTION ********** */
 
@@ -192,11 +192,21 @@ a, .red {
 
 a:hover, a:active {
     text-decoration: none;
-    color: #23202B;
+    color: #23202b;
 }
 
 /* ********** FOOTER ********** */
 
-footer {
+/*footer {
     border-top: 30px solid #cb202d;
+}*/
+
+/* ********** BACKGROUND-COLOR ********** */
+
+.bg-black {
+    background-color: #23202b; /* #17101d; */
+}
+
+.bg-red {
+    background-color: #cb202d;
 }
