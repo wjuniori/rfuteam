@@ -42,65 +42,6 @@
     background-color: #cb202d;
 }
 
-/* ********** HEADER ********** */
-
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
-header.masthead {
-    position: relative;
-    width: 100%;
-    padding-top: 176px; /* height do navbar: 76px; */
-    padding-bottom: 100px;
-    color: white;
-    background: linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)), url("../img/action-backlit-beach-978695.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-header.masthead .header-content {
-    max-width: 500px;
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-header.masthead .header-content h1 {
-    font-size: 30px;
-}
-
-header.masthead .list-container {
-    max-width: 325px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 992px) {
-
-    header.masthead {
-        height: 100vh;
-        min-height: 775px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    header.masthead .header-content {
-        margin-bottom: 0;
-        text-align: left;
-    }
-
-    header.masthead .header-content h1 {
-        font-size: 50px;
-    }
-
-}
-
-.card-style {
-    background: rgba(35,32,43,0.8);
-}
-
 /* ********** ABOUT SECTION ********** */
 
 section {
@@ -145,8 +86,17 @@ h2 {
 
 /* ********** CONTACT SECTION ********** */
 
-a, a:hover {
+#contact a {
     color: #cb202d;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+
+    #contact a:hover {
+        text-decoration: underline;
+    }
+
 }
 
 /* ********** PARTNERS SECTION ********** */
