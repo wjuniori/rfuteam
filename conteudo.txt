@@ -17,13 +17,17 @@
 [OK] 4. Botão de menu responsivo
 [OK] 5. "Refazer" header (w3school)
 
-6. Colocar o header em full screen
-7. Colocar o vídeo na section about
-8. Ajeitar menu dropdown
+[OK] 6. Colocar o header em full screen
+[OK] 7. Colocar o vídeo na section about
 
+8. Ajeitar menu dropdown
+  8.1 Torneio - Novas informações em breve
 9. Incluir seções mídia, alunos e parceiros
 
-10. Colocar a seção contato em outra página
+10. Criar a página torneio.html
+
+11. Colocar a seção contato em outra página
+  11.1 Adicionar Google Maps das arenas
 
 => Estrutura
 
