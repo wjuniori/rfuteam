@@ -17,6 +17,9 @@
     <!-- Header CSS -->
     <link rel="stylesheet" type="text/css" href="css/header.css">
 
+    <!-- Nav CSS -->
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
@@ -25,7 +28,7 @@
 
     <title>Rfuteam || Treinamento Funcional com Futevôlei</title>
   </head>
-  <body id="page-top" data-spy="scroll" data-target="#mainNav" data-offset="76">
+  <body id="page-top">
 
     <!-- ********** NAVIGATION BAR ********** -->
     
@@ -33,7 +36,7 @@
       <div class="container">
 
         <!-- logo -->
-        <a class="navbar-brand" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <img class="img-brand" src="img/rfuteam-logo.png" alt="Logo Rfuteam">
         </a>
 
@@ -46,16 +49,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#classes">Turmas</a>
+              <a class="nav-link js-scroll-trigger" href="#classes">Turmas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#plans">Planos</a>
+              <a class="nav-link js-scroll-trigger" href="#plans">Planos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#instructors">Instrutores</a>
+              <a class="nav-link js-scroll-trigger" href="#instructors">Instrutores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contato</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
             </li>
           </ul>
         </div>
@@ -89,7 +92,7 @@
                 </li>
               </ul>
               <div class="card my-4 text-center card-style">
-                <a href="#about">
+                <a class="js-scroll-trigger" href="#about">
                   <div class="card-body">
                     <p class="m-0">Venha fazer uma aula experimental!</p>
                   </div>
@@ -136,7 +139,7 @@
               <i class="fas fa-4x fa-map-marked-alt mb-3"></i>
               <h3 class="mb-3">Onde você estiver</h3>
               <p class="text-muted m-0">
-                Na praia de Itapuã, na Lagoa do Abaeté e no Le Parc Residential Resort. Ou leve o Rfuteam para perto de você.
+                Na Praia de Itapuã, na Lagoa do Abaeté e no Le Parc Residential Resort. Ou leve o Rfuteam para perto de você.
               </p>
             </div>
           </div>
@@ -420,8 +423,14 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/rfuteam.js"></script>
   </body>
 </html>

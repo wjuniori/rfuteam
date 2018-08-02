@@ -1,3 +1,74 @@
+=> Referências
+
+* startbootstrap-coming-soon
+* startbootstrap-new-age
+* startbootstrap-creative [Forked]
+* linguagil.github.io (https://linguagil.com.br/) [Forked]
+* curso-novo (https://vrpazdejesus.github.io/curso-novo/) [Forked]
+
+* startbootstrap-scrolling-nav
+* startbootstrap-new-age
+
+=> Atividades
+
+[OK] 1. Scroll
+[OK] 2. Marcação do menu
+[OK] 3. Menu transparente no inicio
+[OK] 4. Botão de menu responsivo
+[OK] 5. "Refazer" header (w3school)
+
+6. Colocar o header em full screen
+7. Colocar o vídeo na section about
+8. Ajeitar menu dropdown
+
+9. Incluir seções mídia, alunos e parceiros
+
+10. Colocar a seção contato em outra página
+
+=> Estrutura
+
+1. Página Rfuteam
+  1.1 Seção Mídia
+  1.2 Seção Alunos
+  1.3 Seção Parceiros (de camisa, fotografia, academia, nutricionista, etc)
+  1.4 Seção Informes (Notícias/Promoções) -- WordPress
+  1.5 Matrícula/Mensalidade --PHP
+
+2. Página Torneio Rfuteam
+  2.1 Seção Patrocínios (do evento)
+  2.2 Eventos Anteriores
+  2.3 Pŕoximos Eventos (com contador de tempo/javascript)
+  2.4 Modalidades (adulto, infantil, dupla, misto, etc)
+  2.5 Localização (mapa, endereço, como chegar)
+  2.6 Regras (quem pode participar, assistir, como pagar, regras do jogo)
+  2.7 Tabela de confrontos
+  2.8 Premiação
+  2.9 Inscrição --PHP/https://www.eventbrite.com.br
+
+3. Página Contato
+  1.1 Mapa com as arenas
+  1.2 Campos de entrada
+  1.3 Recebimento das mensagens (via e-mail)/PHP
+
+=>
+
+How TO - Full Page Image
+Hero Image
+
+Countdown Timer
+HTML Includes
+Google Maps
+Hero Image
+Rounded Images
+Responsive Image
+Bottom Border Navbar
+Pricing Tables
+Coming Soon Page
+Comparison Table
+Read More Read Less
+
+------------------------
+
 Venha treinar com Rfuteam
 
 Saúde e Bem-Estar
