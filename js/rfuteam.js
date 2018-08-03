@@ -28,6 +28,18 @@
     offset: heightNavbar
   });
 
+  // Activate tooltip to add content and markup after their trigger element
+  $('#js-link').tooltip({
+    placement: 'bottom',
+    trigger: 'hover focus',
+    title: 'Em breve!'
+  });
+
+  // Disable the link functionality of <a>
+  $('#js-link').click( function() {
+    return false;
+  });
+
   // Informs the inner width of the browser window (in pixels)
   function getViewportWidth() {
     return window.innerWidth
