@@ -20,9 +20,39 @@
 [OK] 6. Colocar o header em full screen
 [OK] 7. Colocar o vídeo na section about
 
-8. Ajeitar menu dropdown
-  8.1 Torneio - Novas informações em breve
-9. Incluir seções mídia, alunos e parceiros
+[OK] 8. Ajeitar menu dropdown
+  [OK] 8.1 Torneio - Novas informações em breve
+
+[OK] 9. Incluir seções mídia, alunos e parceiros
+
+=> Alunos
+
+https://blackrockdigital.github.io/startbootstrap-creative/
+https://blackrockdigital.github.io/startbootstrap-agency/
+https://blackrockdigital.github.io/startbootstrap-freelancer/
+
+=> Parceiros
+
+https://blackrockdigital.github.io/startbootstrap-agency/
+
+=> Contato
+
+https://blackrockdigital.github.io/startbootstrap-agency/
+https://blackrockdigital.github.io/startbootstrap-freelancer/
+https://blackrockdigital.github.io/startbootstrap-modern-business/contact.html
+
+=> Mídia
+
+http://www.geladaexpress.com.br/v_02/midia.html
+https://saiderabrasil.com.br/sobre-nos/#na-midia
+
+=> Newsletter/Subscribe
+
+https://blackrockdigital.github.io/startbootstrap-grayscale/
+
+=> Tooltip || Menu fixo, assunto variado || Login Page
+
+https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/notifications.html
 
 10. Criar a página torneio.html
 

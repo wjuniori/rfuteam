@@ -51,11 +51,49 @@ h2 {
 
 
 
+/* ********** STUDENTS SECTION ********** */
+
+.grid-img {
+  position: relative;
+}
+
+.grid-img img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.grid-img .content-text {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top: 0; to append it to the top */
+  background: rgba(0,0,0,0.5); /* Black background width 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 5px; /* Some padding */
+  box-sizing: border-box;
+}
+
 /* ********** INSTRUCTORS SECTION ********** */
 
 .img-profile {
     width: 300px;
     height: 300px;
+}
+
+/* ********** MEDIA SECTION ********** */
+
+.media {
+    max-width: 300px;
+}
+
+.media a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .media a:hover {
+        text-decoration: underline;
+    }
 }
 
 /* ********** CONTACT SECTION ********** */
@@ -75,7 +113,9 @@ h2 {
 
 /* ********** PARTNERS SECTION ********** */
 
-
+#partners .container {
+    border-top: 1px dashed #23202b;
+}
 
 /* ********** FOOTER ********** */
 
