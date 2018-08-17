@@ -54,10 +54,19 @@ https://blackrockdigital.github.io/startbootstrap-grayscale/
 
 https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/notifications.html
 
-10. Criar a página torneio.html
-
-11. Colocar a seção contato em outra página
-  11.1 Adicionar Google Maps das arenas
+[OK]* Ajeitar arquivo README.md
+[OK]* Alterar o nome das imagens e video
+[OK]* Adicionar o arquivo gitignore
+[commit]
+* Criar o álbum de fotos em alunos
+* Adicionar botões de redes sociais para compartilhamento (Sumo me)
+* Google Analytics
+* SEO
+* Campo E-mail para Newsletter/Subscribe
+----------------------------------------------------------------------
+* Criar a página torneio.html
+* Colocar a seção contato em outra página
+  - Adicionar Google Maps das arenas
 
 => Estrutura
 
