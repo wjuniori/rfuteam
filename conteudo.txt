@@ -57,7 +57,7 @@ https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/notifications
 [OK]* Ajeitar arquivo README.md
 [OK]* Alterar o nome das imagens e video
 [OK]* Adicionar o arquivo gitignore
-[commit]
+
 * Criar o álbum de fotos em alunos
 * Adicionar botões de redes sociais para compartilhamento (Sumo me)
 * Google Analytics
