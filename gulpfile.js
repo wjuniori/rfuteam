@@ -13,7 +13,8 @@ var imgFiles = [
   './public/assets/img/**/*.jpg',
   './public/assets/img/**/*.gif',
   './public/assets/img/**/*.png',
-  '!./public/assets/img/originais/**/*'
+  '!./public/assets/img/originais/**/*',
+  '!./public/assets/img/partners/**/*'
 ];
 var videoFiles = ['./public/assets/video/**/*.mp4'];
 var htmlFile = ['./public/assets/*.html'];

@@ -57,16 +57,188 @@ https://blackrockdigital.github.io/startbootstrap-sb-admin-2/pages/notifications
 [OK]* Ajeitar arquivo README.md
 [OK]* Alterar o nome das imagens e video
 [OK]* Adicionar o arquivo gitignore
+[OK]* Google Analytics
+[OK]* SEO
 
+----------------------------------------------------------------------
 * Criar o álbum de fotos em alunos
 * Adicionar botões de redes sociais para compartilhamento (Sumo me)
-* Google Analytics
-* SEO
 * Campo E-mail para Newsletter/Subscribe
+
 ----------------------------------------------------------------------
 * Criar a página torneio.html
 * Colocar a seção contato em outra página
   - Adicionar Google Maps das arenas
+
+----------------------------------------------------------------------
+* Melhorar compactação de imagens (Gulp)
+* Comando para excluir conteúdo dos diretórios (Gulp)
+* Melhorar compactação HTML (remover comentários) - Gulp
+* Melhorar configuração Google Analytics e Search Engine
+* Configurar David e Travis CI
+* [Projetos Futuros] Criar script de inicialização de projeto (git, npm, gulp)
+
+----------------------------------------------------------------------
+[OK]* Configurar redes socias e descrição do Google
+* Levantar informações faltantes do site (com Rafael)
+
+=> Capa
+
+[0K] - Atualizar whatsapp exclusivo para Rfuteam
+
+=> Diferenciais
+
+[0K] - Atualizar campo "No seu ritmo"
+
+[OK] => Turmas (.turmas.odt)
+
+- Arena Itapuã
+
+Turma: Mista
+Dias: Terça e Sexta
+Horários: 05:00 às 06:30 || 06:30 às 08:00
+
+Turma: Avançado
+Dias: Terça e Sexta
+Horários: 08:00 às 09:00
+
+Turma: Personal *
+Dias: Sábado
+Horários: 06:00 às 07:00 || 07:00 às 08:00
+
+Turma: Feminino Iniciante
+Dias: Sábado
+Horários: 08:00 às 09:00
+
+Turma: Feminino Intermediário
+Dias: Sábado
+Horários: 09:00 às 10:00
+
+* Turma Personal: máximo de 2 pessoas por hora
+
+- Arena Abaeté
+
+Turma: Mista
+Dias: Segunda e Quarta
+Horários: 16:00 às 17:30
+
+- Arena Le Parc
+
+Turma: Mista
+Dias: Segunda e Quarta
+Horários: 06:00 às 07:00 || 07:00 às 08:00
+
+Turma: Feminino
+Dias: Segunda, Quarta e Sexta
+Horários: 08:00 às 09:30 (Seg/Qua) e 16:00 às 18:00 (Sex)
+
+Turma: Infantil
+Dias: Terça e Quinta
+Horários: 16:00 às 17:00
+
+Turma: Personal *
+Dias: Terça e Quinta
+Horários: 17:00 às 18:00
+
+* Turma Personal: máximo de 4 pessoas por hora
+
+[OK] => Planos
+
+Itapuan/Abaeté
+1x na semana R$ 60,00 mensal
+2x na semana R$ 100,00 mensal
+3x na semana R$ 150,00 mensal
+4x na semana R$ 200,00 mensal
+5x na semana R$ 250,00 mensal
+Aula avulso R$ 25,00
+Personal (turmas com máx 2 pessoas p/hora) R$ 50,00 (por aula ou por mês???)
+
+* Na arena Itapuan/Abaeté, o Personal deve ser mais caro do que 1x na semana
+
+Le Parc
+1x na semana R$ 100,00 mensal
+2x na semana R$ 150,00 mensal
+3x na semana R$ 250,00 mensal
+Aula avulso R$ 40,00
+Personal (Turmas no máximo 4 pessoas p/hora) R$ 60,00 (por aula ou por mês???)
+
+* Na arena Le Parc, o Personal deve ser mais caro do que 2x na semana
+
+[PENDENTE] => Alunos
+
+Tayrone - Cantor
+Treina na Arena Le Parc
+
+Kadja Rodrigues - Contadora
+Treina na Arena Itapuã
+
+Lucas Ramos - Atleta EC Jacuipense
+Treina na Arena Le Parc
+
+Valnisia (sobrenome????) - Aposentada
+Treina na Arena Itapuã
+
+Rosana Almeida - Autônomo
+Treina na Arena Abaeté
+
+Valbert Diogo - Administrador
+Treina na Arena Abaeté
+
+=> Instrutores
+
+- Ramon Carvalho
+
+  Facebook: não tem
+  Instagram:
+  WhatsApp: (71) 988912031
+  E-mail: 
+
+- Rafael Santos
+
+  Facebook: https://www.facebook.com/rflsanttos
+  Instagram:
+  WhatsApp:
+  E-mail: rflsantos@live.com
+
+- Rafael Franco (??????)
+  Professor de Educação Física
+  CREF - BA 007023
+  Formação (??????)
+
+  Foto:
+  Facebook: https://www.facebook.com/rafael.franco.92
+  Instagram: https://www.instagram.com/rafaelfrancopersonal/
+  WhatsApp: (71) 9993560980
+  E-mail: rafaelpersonalvilla@gmail.com
+
+=> Contato
+
+Celular: (Ramon Carvalho)
+Celular: (Rafael Santos)
+Telefone Fixo: 
+Celular/WhatsApp: 
+E-mail: contato@rfuteam.com.br
+
+=> Parceiros (do Rfuteam)
+
+Obs.: Os patrocinadores do Torneio estarão na página do Torneio.
+
+* Levantar valores de domínio e hospedagem (sem/com PHP)
+
+./Domínio e Hospedagem.txt
+
+----------------------------------------------------------------------
+=> ANTES DE HOSPEDAR/PUBLICAR
+
+* Comprar hospedagem/domínio
+* Apagar PARTNERS SECTION e <ul class="list-group list-group-flush"> em PLANS SECTION
+* Trocar (manter o www.):
+  - <link rel="canonical" href="https://wjuniori.github.io/repo-rfuteam/" />
+  - <meta property="og:url" content="https://wjuniori.github.io/repo-rfuteam/"/>
+  - <meta property="og:image" content="https://wjuniori.github.io/repo-rfuteam/public/dist/img/classes/turma-rfuteam-arena-itapua.jpg"/>
+* Configurar Google Analytics e Search Engine
+  - Trocar googled8d6ff080e1e7171.html
+* Ajeitar e-mails dos intrutores e da seção Contato
 
 => Estrutura
 
