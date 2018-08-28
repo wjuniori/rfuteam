@@ -52,10 +52,10 @@
 
     if (getViewportWidth() >= 992) {
 
-      if ($("#mainNav").offset().top <= 100) { // No topo
+      if ($("#mainNav").offset().top <= 100) { // At the top
         $("#mainNav").removeClass("bg-light");
         $("#mainNav").addClass("bg-transparent");
-      } else { // No corpo
+      } else { // At the body
         $("#mainNav").removeClass("bg-transparent");
         $("#mainNav").addClass("bg-light");
       }
