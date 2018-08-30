@@ -6,6 +6,7 @@ var imageMin = require('gulp-imagemin');
 var concat = require('gulp-concat');
 var htmlMin = require('gulp-htmlmin');
 var notify = require('gulp-notify');
+var replace = require('gulp-replace');
 
 var cssFiles = ['./public/assets/css/**/*.css'];
 var jsFiles = ['./public/assets/js/**/*.js'];
@@ -61,6 +62,31 @@ gulp.task('video', function() {
     .pipe(gulp.dest('./public/dist/video/'));
 });
 
+// Replace HTML
+gulp.task('html:replace', function() {
+  return gulp.src(htmlFile)
+  .pipe(replace('https://wjuniori.github.io/repo-rfuteam/', 'https://www.rfuteam.com.br/'))
+  .pipe(replace('UA-124234746-1', 'UA-124836988-1'))
+  .pipe(replace('ramon-carvalho@', 'ramon-carvalho@rfuteam.com.br'))
+  .pipe(replace('rafael-franco@', 'rafael-franco@rfuteam.com.br'))
+  .pipe(replace('rafael-santos@', 'rafael-santos@rfuteam.com.br'))
+  .pipe(gulp.dest('./'));
+});
+
+// Minify Production HTML
+gulp.task('html:prod:minify', ['html:replace'], function() {
+  return gulp.src('./index.html')
+  .pipe(htmlMin({
+    collapseWhitespace:true
+  }))
+  .on("error", notify.onError("Error: <%= error.message %>"))
+  .pipe(gulp.dest('./'))
+  .pipe(browserSync.stream());
+});
+
+// Production HTML
+gulp.task('html:prod', ['html:replace', 'html:prod:minify']);
+
 // Minify HTML
 gulp.task('html:minify', function() {
   return gulp.src(htmlFile)
@@ -74,7 +100,6 @@ gulp.task('html:minify', function() {
 
 // HTML
 gulp.task('html', ['html:minify']);
-
 
 // Minify CSS
 gulp.task('css:minify', function() {
@@ -126,4 +151,12 @@ gulp.task('dev', ['html', 'css', 'js', 'img', 'video', 'vendor', 'browserSync'],
   gulp.watch(jsFiles, ['js']);
   gulp.watch(imgFiles, ['img']);
   gulp.watch(htmlFile, ['html']);
+});
+
+//Prod task
+gulp.task('prod', ['html:prod', 'css', 'js', 'img', 'video', 'vendor', 'browserSync'], function() {
+  gulp.watch(cssFiles, ['css']);
+  gulp.watch(jsFiles, ['js']);
+  gulp.watch(imgFiles, ['img']);
+  gulp.watch(htmlFile, ['html:prod']);
 });

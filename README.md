@@ -30,7 +30,9 @@ After downloading, run `npm install` and then run `gulp dev` which will open up 
 
 - `gulp` the default task that builds everything
 - `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp prod` replaces keywords for production, browserSync opens the project in your default browser and live reloads when changes are made
 - `gulp html` minifies the HTML files
+- `gulp html:prod` replaces keywords for production and minifies the HTML files
 - `gulp css` minifies the CSS files
 - `gulp js` minifies the JS files
 - `gulp img` compress image files
