@@ -9,7 +9,13 @@ This repository contains the resources and source code of the Rfuteam website.
 
 ## Preview
 
-**[View Live Preview](https://wjuniori.github.io/repo-rfuteam/)**
+* **[Live Preview (GitHub Pages)](https://wjuniori.github.io/repo-rfuteam/)**
+* **[Rfuteam Website](https://www.rfuteam.com.br/)**
+
+## Status
+
+[![dependencies Status](https://david-dm.org/wjuniori/repo-rfuteam/status.svg)](https://david-dm.org/wjuniori/repo-rfuteam)
+[![devDependencies Status](https://david-dm.org/wjuniori/repo-rfuteam/dev-status.svg)](https://david-dm.org/wjuniori/repo-rfuteam?type=dev)
 
 ## Download
 

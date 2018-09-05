@@ -2,7 +2,7 @@
   "title": "Rfuteam",
   "name": "repo-rfuteam",
   "version": "1.0.0",
-  "description": "Recursos e código-fonte do website Rfuteam",
+  "description": "Resources and source code of the Rfuteam website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +23,7 @@
     "url": "https://github.com/wjuniori/repo-rfuteam/issues",
     "email": "wjuniori.si@gmail.com"
   },
-  "homepage": "https://wjuniori.github.io/repo-rfuteam/",
+  "homepage": "https://www.rfuteam.com.br/",
   "dependencies": {
     "bootstrap": "4.1.1",
     "@fortawesome/fontawesome-free": "5.1.0",
