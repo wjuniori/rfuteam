@@ -1,4 +1,4 @@
-# repo-rfuteam
+# projeto-rfuteam
 
 This repository contains the resources and source code of the Rfuteam website.
 
@@ -9,18 +9,18 @@ This repository contains the resources and source code of the Rfuteam website.
 
 ## Preview
 
-* **[Live Preview (GitHub Pages)](https://wjuniori.github.io/repo-rfuteam/)**
+* **[Live Preview (GitHub Pages)](https://wjuniori.github.io/projeto-rfuteam/)**
 * **[Rfuteam Website](https://www.rfuteam.com.br/)**
 
 ## Status
 
-[![dependencies Status](https://david-dm.org/wjuniori/repo-rfuteam/status.svg)](https://david-dm.org/wjuniori/repo-rfuteam)
-[![devDependencies Status](https://david-dm.org/wjuniori/repo-rfuteam/dev-status.svg)](https://david-dm.org/wjuniori/repo-rfuteam?type=dev)
+[![dependencies Status](https://david-dm.org/wjuniori/projeto-rfuteam/status.svg)](https://david-dm.org/wjuniori/projeto-rfuteam)
+[![devDependencies Status](https://david-dm.org/wjuniori/projeto-rfuteam/dev-status.svg)](https://david-dm.org/wjuniori/projeto-rfuteam?type=dev)
 
 ## Download
 
-* Clone the repo: `git clone https://github.com/wjuniori/repo-rfuteam.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/wjuniori/repo-rfuteam)
+* Clone the repo: `git clone https://github.com/wjuniori/projeto-rfuteam.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/wjuniori/projeto-rfuteam)
 
 ## Usage
 
@@ -49,7 +49,7 @@ You must have npm and Gulp installed globally on your machine in order to use th
 
 ## Bugs and Issues
 
-Have a bug or an issue with this website? [Open a new issue](https://github.com/wjuniori/repo-rfuteam/issues) here on GitHub
+Have a bug or an issue with this website? [Open a new issue](https://github.com/wjuniori/projeto-rfuteam/issues) here on GitHub
 
 ## About
 

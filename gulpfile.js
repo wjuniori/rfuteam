@@ -65,8 +65,8 @@ gulp.task('video', function() {
 // Replace HTML
 gulp.task('html:replace', function() {
   return gulp.src(htmlFile)
-  .pipe(replace('https://wjuniori.github.io/repo-rfuteam/', 'https://www.rfuteam.com.br/'))
-  .pipe(replace('UA-124234746-1', 'UA-124836988-1'))
+  .pipe(replace('https://wjuniori.github.io/projeto-rfuteam/', 'https://www.rfuteam.com.br/'))
+  .pipe(replace('UA-xxxxxxxxx-x', 'UA-124836988-1'))
   .pipe(replace('ramon-carvalho@', 'ramon-carvalho@rfuteam.com.br'))
   .pipe(replace('rafael-franco@', 'rafael-franco@rfuteam.com.br'))
   .pipe(replace('rafael-santos@', 'rafael-santos@rfuteam.com.br'))

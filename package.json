@@ -1,15 +1,15 @@
 {
   "title": "Rfuteam",
-  "name": "repo-rfuteam",
+  "name": "projeto-rfuteam",
   "version": "1.0.0",
-  "description": "Resources and source code of the Rfuteam website",
+  "description": "Dependencies and DevDependencies of the Rfuteam website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wjuniori/repo-rfuteam.git"
+    "url": "git+https://github.com/wjuniori/projeto-rfuteam.git"
   },
   "keywords": [
     "rfuteam",
@@ -20,7 +20,7 @@
   "author": "Washington Júnior (wjuniori.si@gmail.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wjuniori/repo-rfuteam/issues",
+    "url": "https://github.com/wjuniori/projeto-rfuteam/issues",
     "email": "wjuniori.si@gmail.com"
   },
   "homepage": "https://www.rfuteam.com.br/",
