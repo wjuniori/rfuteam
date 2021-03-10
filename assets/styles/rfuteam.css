@@ -1,6 +1,8 @@
 /* Global ========================= */
 :root {
-  --white: #fff;
+  --color-primary: #cb202d;
+  --color-muted: #6c757d;
+  --color-white: #fff;
 }
 
 * {
@@ -28,7 +30,7 @@ h1 {
   font-family: "Alice", serif;
   font-weight: normal;
   font-size: 4rem; /* 4.8 */
-  color: var(--white);
+  color: var(--color-white);
 }
 
 /* Header ========================= */
@@ -51,6 +53,51 @@ header {
 
 .header--text {
   margin-bottom: 2.7rem;
+}
+
+/* About Section ========================= */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.box--about {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .box--about {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box--about {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.about {
+  text-align: center;
+  max-width: 26.6rem;
+  justify-self: center;
+}
+
+.about--icon {
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.about--title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.about--text {
+  color: var(--color-muted);
 }
 
 /* Responsive ========================= */
