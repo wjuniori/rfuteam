@@ -1,6 +1,7 @@
 /* Global ========================= */
 :root {
   --color-primary: #cb202d;
+  --color-primary-dark: #a30f1a;
   --color-muted: #6c757d;
   --color-white: #fff;
 }
@@ -31,6 +32,12 @@ h1 {
   font-weight: normal;
   font-size: 4rem; /* 4.8 */
   color: var(--color-white);
+}
+
+h2 {
+  font-family: "Alice", serif;
+  font-weight: normal;
+  font-size: 2.7rem; /* 3.2 */
 }
 
 /* Header ========================= */
@@ -98,6 +105,78 @@ section {
 
 .about--text {
   color: var(--color-muted);
+}
+
+/* Arena Section ========================= */
+.arena {
+  background: linear-gradient(
+    0deg,
+    rgba(196, 196, 196, 0.3),
+    rgba(196, 196, 196, 0.3)
+  );
+}
+
+.title {
+  margin-bottom: 2.3rem;
+}
+
+.box--arena {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .box--arena {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box--arena {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.25),
+    0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.7rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card--img {
+  border-radius: 0.7rem 0.7rem 0rem 0rem;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+}
+
+.card--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 0.7rem;
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: background-color 0.2s;
+}
+
+.card--link:hover {
+  background: var(--color-primary-dark);
 }
 
 /* Responsive ========================= */
