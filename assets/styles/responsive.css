@@ -8,6 +8,13 @@
   margin-right: auto;
 }
 
+.container--fluid {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
 .box {
   width: 100%;
 }
