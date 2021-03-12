@@ -207,7 +207,7 @@ section {
   position: relative;
 }
 
-.gallery__image {
+.gallery__img {
   width: 100%;
   height: auto;
 }
@@ -227,6 +227,36 @@ section {
 
 .gallery__detail {
   font-size: 1.1rem;
+}
+
+/* Media Section ========================= */
+.box__media {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.media__link {
+  justify-self: center;
+}
+
+@media screen and (min-width: 576px) {
+  .box__media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .media__link:first-child {
+    justify-self: flex-end;
+  }
+
+  .media__link:last-child {
+    justify-self: flex-start;
+  }
+}
+
+.media__img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Responsive ========================= */
