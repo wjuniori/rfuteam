@@ -40,6 +40,11 @@ h2 {
   font-size: 2.7rem; /* 3.2 */
 }
 
+/* Links ========================= */
+a {
+  text-decoration: none;
+}
+
 /* Header ========================= */
 header {
   min-height: 75vh;
@@ -58,12 +63,13 @@ header {
   align-items: flex-end;
 }
 
-.header__text {
+.box__header {
   margin-bottom: 2.7rem;
 }
 
 /* About Section ========================= */
-section {
+section,
+footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -164,7 +170,6 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  text-decoration: none;
   background: var(--color-primary);
   color: var(--color-white);
   border-radius: 0.7rem;
@@ -236,8 +241,12 @@ section {
   gap: 2rem;
 }
 
+.media {
+  text-align: center;
+}
+
 .media__link {
-  justify-self: center;
+  display: inline-block;
 }
 
 @media screen and (min-width: 576px) {
@@ -245,18 +254,73 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .media__link:first-child {
-    justify-self: flex-end;
+  .media:first-child {
+    text-align: right;
   }
 
-  .media__link:last-child {
-    justify-self: flex-start;
+  .media:last-child {
+    text-align: left;
   }
 }
 
 .media__img {
   max-width: 100%;
   height: auto;
+}
+
+/* Footer ========================= */
+footer {
+  background-image: linear-gradient(
+      0deg,
+      rgba(203, 32, 45, 0.5),
+      rgba(203, 32, 45, 0.5)
+    ),
+    url(../img/arena-le-parc-rfuteam.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--color-white);
+}
+
+.box__contact {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+
+.contact__link {
+  display: inline-block;
+  color: var(--color-white);
+}
+
+.contact__link:not(:last-child) {
+  margin-right: 1.7rem;
+}
+
+@media screen and (min-width: 576px) {
+  .box__contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact:first-child {
+    text-align: right;
+  }
+
+  .contact:last-child {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Responsive ========================= */
