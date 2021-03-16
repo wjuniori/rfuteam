@@ -68,8 +68,7 @@ header {
 }
 
 /* About Section ========================= */
-section,
-footer {
+section {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -287,6 +286,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .contact {
@@ -298,7 +299,8 @@ footer {
   margin-bottom: 1.3rem;
 }
 
-.contact__link {
+.contact__link,
+.credit__link {
   display: inline-block;
   color: var(--color-white);
 }
@@ -321,6 +323,35 @@ footer {
     display: flex;
     align-items: center;
   }
+}
+
+.outer {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.box__outer {
+  text-align: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 576px) {
+  .box__outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .credit {
+    order: -1;
+  }
+}
+
+.img__brand {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
 }
 
 /* Responsive ========================= */
