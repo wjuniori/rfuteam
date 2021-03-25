@@ -331,8 +331,8 @@ footer {
 
 .box__outer {
   text-align: center;
-  padding-top: 1.8rem;
-  padding-bottom: 1.8rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 @media screen and (min-width: 576px) {
