@@ -73,12 +73,12 @@
       gtag("config", "UA-xxxxxxxxx-x");
     </script>
   </head>
-  <body>
+  <body id="page-top">
     <!-- Nav Bar ========================= -->
     <nav>
       <div class="container">
         <div class="box menu" id="menu">
-          <a href="#" class="menu__logo">
+          <a href="#page-top" class="menu__logo">
             <img
               src="./assets/img/rfuteam-logo.png"
               alt="Logo Rfuteam"
@@ -90,8 +90,8 @@
             <span class="menu__navicon"></span>
           </label>
           <ul class="menu__options">
-            <li><a href="#">Arenas</a></li>
-            <li><a href="#">Agende uma aula</a></li>
+            <li><a href="#arena">Arenas</a></li>
+            <li><a href="#cta">Agende uma aula</a></li>
           </ul>
         </div>
       </div>
@@ -149,7 +149,7 @@
       </section>
 
       <!-- Arena Section ========================= -->
-      <section class="arena">
+      <section class="arena" id="arena">
         <div class="container">
           <div class="box">
             <h2 class="title">Arenas</h2>
@@ -311,7 +311,7 @@
       </section>
 
       <!-- Footer ========================= -->
-      <footer>
+      <footer id="cta">
         <div class="container">
           <div class="box box__contact">
             <div class="contact">
@@ -370,5 +370,8 @@
         </div>
       </footer>
     </main>
+
+    <!-- Rfuteam JavaScript -->
+    <script type="text/javascript" src="./assets/js/app.js"></script>
   </body>
 </html>
