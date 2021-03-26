@@ -43,6 +43,10 @@ const scrollToIdOnClick = (event) => {
   smoothScrollTo(0, to);
 };
 
+const closeMenu = () => {
+  document.querySelector(".menu .menu__btn").checked = false;
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = document.querySelectorAll(
     '.menu .menu__options li a[href^="#"]'
@@ -62,4 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const to = getScrollTopByHref(element);
       smoothScrollTo(0, to);
     });
+
+  const menuLinks = document.querySelectorAll(".js-close-menu");
+  menuLinks.forEach((item) => {
+    item.addEventListener("click", closeMenu);
+  });
 });
