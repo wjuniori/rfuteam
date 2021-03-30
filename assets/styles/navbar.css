@@ -4,7 +4,7 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(153, 170, 187, 0.7);
 }
 
 .menu {
@@ -36,6 +36,15 @@ nav {
   width: 100%;
   margin: 0.3rem 0;
   color: var(--color-white);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.menu__link {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 .menu .menu__logo {
@@ -100,7 +109,7 @@ nav {
   top: 0;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .menu li {
     margin: 0 0.7rem;
   }
