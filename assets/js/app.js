@@ -36,24 +36,29 @@ const getScrollTopByHref = (element) => {
   return document.querySelector(id).offsetTop;
 };
 
-const scrollToIdOnClick = (event) => {
-  event.preventDefault();
-  const NAV_BAR_HEIGHT = 82.5;
-  const to = getScrollTopByHref(event.target) - NAV_BAR_HEIGHT;
+const scrollToIdOnClick = (element, height) => {
+  const to = getScrollTopByHref(element) - height;
   smoothScrollTo(0, to);
 };
 
-const closeMenu = () => {
-  document.querySelector(".menu .menu__btn").checked = false;
+const closeMenu = () =>
+  (document.querySelector(".menu .menu__btn").checked = false);
+
+const handleScrollable = (event) => {
+  event.preventDefault();
+  const NAV_BAR_HEIGHT = 82.5;
+  scrollToIdOnClick(event.target, NAV_BAR_HEIGHT);
+  closeMenu();
 };
+
+const handleClosure = (event) =>
+  !document.querySelector("nav").contains(event.target) && closeMenu();
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = document.querySelectorAll(
     '.menu .menu__options li a[href^="#"]'
   );
-  menuItems.forEach((item) => {
-    item.addEventListener("click", scrollToIdOnClick);
-  });
+  menuItems.forEach((item) => item.addEventListener("click", handleScrollable));
 
   document
     .querySelector('.menu .menu__logo[href^="#"]')
@@ -63,12 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
         event.target.nodeName.toLowerCase() === "a"
           ? event.target
           : event.target.parentElement;
-      const to = getScrollTopByHref(element);
-      smoothScrollTo(0, to);
+      scrollToIdOnClick(element, 0);
+      closeMenu();
     });
 
-  const menuLinks = document.querySelectorAll(".js-close-menu");
-  menuLinks.forEach((item) => {
-    item.addEventListener("click", closeMenu);
-  });
+  window.addEventListener("click", handleClosure);
+  window.addEventListener("focusin", handleClosure);
 });
