@@ -1,0 +1,501 @@
+/* Global ========================= */
+:root {
+  --color-primary: #cb202d;
+  --color-primary-dark: #a30f1a;
+  --color-muted: #6c757d;
+  --color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  font-size: 87.5%; /* 14px */
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 93.75%; /* 15px */
+  }
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Titles ========================= */
+h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: normal;
+  font-size: 4rem; /* 4.8 */
+  color: var(--color-white);
+}
+
+h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: normal;
+  font-size: 2.7rem; /* 3.2 */
+}
+
+/* Links ========================= */
+a {
+  text-decoration: none;
+}
+
+/* Buttons ========================= */
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 0.7rem;
+
+  transition: background-color 0.2s;
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Images ========================= */
+.img--responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Nav Bar ========================= */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(153, 170, 187, 0.7);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.menu .menu__options {
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.menu .menu__options li {
+  width: 100%;
+}
+
+.menu .menu__options li a {
+  display: inline-block;
+  width: 100%;
+  margin: 0.3rem 0;
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 700;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.menu__link {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.menu .menu__logo {
+  display: inline-block;
+}
+
+.menu .menu__icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 1.9rem 1.3rem;
+}
+
+.menu .menu__icon .menu__navicon {
+  background: var(--color-white);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 1.625rem;
+}
+
+.menu .menu__icon .menu__navicon:before,
+.menu .menu__icon .menu__navicon:after {
+  background: var(--color-white);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.menu .menu__icon .menu__navicon:before {
+  top: -7px;
+}
+
+.menu .menu__icon .menu__navicon:after {
+  top: 7px;
+}
+
+.menu .menu__btn {
+  display: none;
+}
+
+.menu .menu__btn:checked ~ .menu__options {
+  max-height: 300px;
+}
+
+.menu .menu__btn:checked ~ .menu__icon .menu__navicon {
+  background: transparent;
+}
+
+.menu .menu__btn:checked ~ .menu__icon .menu__navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu .menu__btn:checked ~ .menu__icon .menu__navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu .menu__btn:checked ~ .menu__icon:not(.steps) .menu__navicon:before,
+.menu .menu__btn:checked ~ .menu__icon:not(.steps) .menu__navicon:after {
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .menu li {
+    margin: 0 0.7rem;
+  }
+
+  .menu li:last-child {
+    margin-right: 0;
+  }
+
+  .menu .menu__options li {
+    width: auto;
+  }
+
+  .menu .menu__options {
+    width: auto;
+    max-height: none;
+    flex-direction: row;
+  }
+
+  .menu .menu__icon {
+    display: none;
+  }
+}
+
+/* Header ========================= */
+header {
+  padding-top: 8.5rem;
+  padding-bottom: 3rem;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/arena-rfuteam-le-parc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box__header {
+  border: 2px solid var(--color-white);
+  width: auto;
+  padding: 1rem;
+}
+
+/* About Section ========================= */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.box__about {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .box__about {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box__about {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.about {
+  text-align: center;
+  max-width: 26.6rem;
+  justify-self: center;
+}
+
+.about__icon {
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.about__text {
+  color: var(--color-muted);
+}
+
+/* Arena Section ========================= */
+.arena {
+  background: linear-gradient(
+    0deg,
+    rgba(196, 196, 196, 0.3),
+    rgba(196, 196, 196, 0.3)
+  );
+}
+
+.title {
+  margin-bottom: 2.3rem;
+}
+
+.box__arena {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .box__arena {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box__arena {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background-color: var(--color-white);
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.25),
+    0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.7rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card__img {
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Student Section ========================= */
+.student {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.box__student {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 576px) {
+  .box__student {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .box__student {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery {
+  line-height: 0;
+  position: relative;
+}
+
+.gallery__img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery__description {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: var(--color-white);
+  width: 100%;
+  padding: 0.7rem;
+  height: 3.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.gallery__detail {
+  font-size: 1.1rem;
+}
+
+/* Media Section ========================= */
+.box__media {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.media {
+  text-align: center;
+}
+
+.media__link {
+  display: inline-block;
+}
+
+@media screen and (min-width: 576px) {
+  .box__media {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .media:first-child {
+    text-align: right;
+  }
+
+  .media:last-child {
+    text-align: left;
+  }
+}
+
+/* Footer ========================= */
+footer {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/arena-le-parc-rfuteam.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--color-white);
+}
+
+.box__contact {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contact {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+
+.contact__link {
+  display: inline-block;
+  color: var(--color-white);
+}
+
+.contact__link:not(:last-child) {
+  margin-right: 1.7rem;
+}
+
+@media screen and (min-width: 576px) {
+  .box__contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact:first-child {
+    text-align: right;
+  }
+
+  .contact:last-child {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.outer {
+  background: rgba(153, 170, 187, 0.7);
+}
+
+.box__outer {
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+.credit__link {
+  background: var(--color-primary);
+  color: var(--color-white);
+
+  transition: background-color 0.2s;
+}
+
+.credit__link:hover {
+  background: var(--color-primary-dark);
+}
+
+@media screen and (min-width: 576px) {
+  .box__outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .credit {
+    order: -1;
+  }
+}
